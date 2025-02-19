@@ -108,15 +108,15 @@ function App() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
           <ChefHat className="w-16 h-16 mb-4" />
-          <h1 className="text-5xl font-playfair mb-2 text-center px-4">
-          <p className="text-xl font-light italic text-center px-4">
+          <h1 className="text-5xl font-playfair mb-2 text-center px-4">Le Petit Bistro</h1>
+          <p className="text-xl font-light italic text-center px-4">Cozinha francesa com toques contemporâneos</p>
         </div>
       </div>
 
       {/* Navigation */}
       <nav className="bg-white shadow-md sticky top-0 z-10 overflow-x-auto">
-        <div className="flex flex-wrap justify-center py-2 md:py-4 gap-2 md:gap-8 min-w-max">
-          <div className="flex justify-center space-x-8 py-4">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center py-2 md:py-4 gap-2 md:gap-8 min-w-max">
             <button
               onClick={() => setActiveSection('starters')}
               className={`flex items-center space-x-2 px-3 md:px-4 py-2 rounded-full transition-colors whitespace-nowrap ${
@@ -132,8 +132,8 @@ function App() {
                 activeSection === 'mains' ? 'bg-amber-100 text-amber-900' : 'text-gray-600 hover:text-amber-700'
               }`}
             >
-              <UtensilsCrossed className="w-5 h-5" />
-              <span>Principais</span>
+              <UtensilsCrossed className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="text-sm md:text-base">Principais</span>
             </button>
             <button
               onClick={() => setActiveSection('desserts')}
@@ -141,8 +141,8 @@ function App() {
                 activeSection === 'desserts' ? 'bg-amber-100 text-amber-900' : 'text-gray-600 hover:text-amber-700'
               }`}
             >
-              <Coffee className="w-5 h-5" />
-              <span>Sobremesas</span>
+              <Coffee className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="text-sm md:text-base">Sobremesas</span>
             </button>
             <button
               onClick={() => setActiveSection('drinks')}
@@ -150,8 +150,8 @@ function App() {
                 activeSection === 'drinks' ? 'bg-amber-100 text-amber-900' : 'text-gray-600 hover:text-amber-700'
               }`}
             >
-              <Wine className="w-5 h-5" />
-              <span>Bebidas</span>
+              <Wine className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="text-sm md:text-base">Bebidas</span>
             </button>
           </div>
         </div>
